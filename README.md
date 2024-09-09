@@ -1,6 +1,6 @@
 # WEBprojektsAKDP
 
-## Projekta mērķis ir izveidot web lietotni, kas piedāvā personalizētus uztura un fitnesa plānus, kur lietotāji var izveidot savus treniņu un uztura programmas, pamatojoties uz mērķiem un vajadzībām. Projekts ietvers recepšu un treniņu plānu meklēšanas, filtrēšanas un kārtošanas iespējas. Tā kā backend tiks izstrādāts PHP vidē, AI integrācija būs ierobežotāka, taču personalizētie plāni var tikt realizēti ar algoritmiem, kas balstīti uz noteiktiem kritērijiem.
+## Projekta mērķis ir izveidot web lietotni, kas piedāvā personalizētus uztura un fitnesa plānus, kur lietotāji var izveidot savus treniņu un uztura programmas, pamatojoties uz mērķiem un vajadzībām. Projekts ietvers recepšu un treniņu plānu meklēšanas, filtrēšanas un kārtošanas iespējas. Tā kā backend tiks izstrādāts PHP vidē.
 
 ## Galvenās funkcijas:
 1. Reģistrācija un autentifikācija
