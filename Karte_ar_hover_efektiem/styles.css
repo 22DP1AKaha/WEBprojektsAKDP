@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+    
+}
+
+.card-container div{
+    padding: 30px;
+    background-color: floralwhite;
+}
+
+.card img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.card button:hover {
+    background: gray;
+    color: white;
+}
