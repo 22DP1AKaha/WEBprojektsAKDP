@@ -1,15 +1,50 @@
 body{
-    display: flex;
     background-color: #f0f0f0;
+}
+
+nav {
+    margin: 0;
+    background-color: gray;
+    padding: 20px 20px; 
+    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+    color: black;
+    transform: scale(1.1);
+}
+
+.card-flexbox{
+    margin-top: 100px;
 }
 
 .card-container{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
     text-align: center;
     gap: 20px;
     padding: 20px;
@@ -59,6 +94,6 @@ body{
 }
 
 .card:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
