@@ -1,6 +1,6 @@
 body{
     display: flex;
-    background-color: #fff;
+    background-color: #f0f0f0;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -8,22 +8,38 @@ body{
 
 .card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     text-align: center;
     gap: 20px;
+    padding: 20px;
     
 }
 
-.card-container div{
+.card{
+    font-family: monospace;
     padding: 30px;
-    background-color: floralwhite;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+
+}
+
+.card h1{
+    font-size: 40px;
+}
+
+.card p{
+    font-size: 15px;
 }
 
 .card img {
     width: 500px;
     height: 300px;
     object-fit: cover;
+    
 }
 
 .card button {
@@ -34,9 +50,15 @@ body{
     background: black;
     cursor: pointer;
     border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card button:hover {
-    background: gray;
     color: white;
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
