@@ -1,9 +1,20 @@
+/* General Styles */
 body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation Styles */
 nav {
     background-color: #f0f0f0;
     padding: 30px; 
@@ -102,6 +113,7 @@ nav {
     max-height: 500px; 
 }
 
+/* Card Styles */
 .card-flexbox {
     margin-top: 100px;
 }
@@ -110,7 +122,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     gap: 20px;
     padding: 20px;
@@ -121,9 +133,11 @@ nav {
     padding: 30px;
     background-color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    overflow: visible;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.5s ease-in; 
 }
 
 .card h1 {
@@ -138,6 +152,7 @@ nav {
     width: 500px;
     height: 300px;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .card button {
@@ -159,4 +174,78 @@ nav {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: absolute; 
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    width: 80%; 
+    position: relative;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+.modal-open .card:hover,
+.modal-open .card img:hover,
+.modal-open .card button:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.modal-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.modal-list li {
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    margin: 10px 0; 
+    padding: 10px 15px;
+    transition: background-color 0.3s; 
+}
+
+.modal-list li:hover {
+    background-color: #e9e9e9; 
+}
+
+.modal-list p {
+    margin: 0;
+    color: #333; 
+    font-size: 16px; 
+    line-height: 1.5; 
 }
