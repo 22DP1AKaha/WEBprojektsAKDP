@@ -387,3 +387,104 @@ nav {
     margin-right: 1rem;
     font-size: 1rem;
   }
+
+article.row {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    width: 80%;
+}
+
+
+.image-box-serviss {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.image-box-serviss img {
+    width: 100%;
+    max-width: 1300px; 
+    height: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 0.5s ease-in; 
+}
+
+.serviss-info-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px; 
+}
+
+.text-box-serviss {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.5;
+    max-width: 60%; 
+    padding: 1.5rem;
+    text-align: left;
+    animation: fadeIn 0.5s ease-in; 
+}
+
+.button-box-serviss {
+    max-width: 40%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    animation: fadeIn 0.5s ease-in; 
+}
+
+.rezervet-servisa-viziti, .cenradis {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background-color: #0066b2;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+
+.rezervet-servisa-viziti:hover, .cenradis:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    article.row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .content-box {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .text-box-serviss {
+        max-width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .button-box-serviss {
+        max-width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
