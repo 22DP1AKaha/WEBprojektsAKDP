@@ -351,10 +351,11 @@ nav {
 
     .card-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 90%; 
+        width: 80%; 
         margin: 1rem auto; 
     }
 
