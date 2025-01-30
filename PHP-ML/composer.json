@@ -1,9 +1,0 @@
-{
-    "name": "codespace/webprojekts",
-    "description": "Recipe generator and diet-based meal suggestions.",
-    "type": "project",
-    "require": {
-        "php-ai/php-ml": "^0.10.0"
-    },
-    "license": "MIT"
-}
